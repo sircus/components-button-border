@@ -1,0 +1,37 @@
+:root {
+  --ButtonPaint-color: #fff;
+  --ButtonPaint-bgColor: var(--g-mono-30);
+
+  --ButtonPaint-primary-color: #fff;
+  --ButtonPaint-primary-bgColor: var(--g-primary);
+}
+
+/*　sircus-components-button-paint
+======================================== */
+
+.Button--paint {
+  background-color: var(--ButtonPaint-bgColor);
+  color: var(--ButtonPaint-color);
+}
+
+.Button--paint:hover,
+.Button--paint:focus,
+.Button--paint:active,
+.Button--paint.is-active{
+  background-color:transparent;
+  color: var(--ButtonPaint-bgColor);
+  text-decoration: none;
+}
+
+
+.Button--paint.Button--primary {
+  background-color:var(--ButtonPaint-primary-bgColor);
+  color:var(--ButtonPaint-primary-color);
+}
+.Button--paint.Button--primary:hover,
+.Button--paint.Button--primary:focus,
+.Button--paint.Button--primary:active,
+.Button--paint.Button--primary.is-active{
+  background-color:transparent;
+  color:var(--ButtonPaint-primary-bgColor);
+}

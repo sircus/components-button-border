@@ -1,0 +1,40 @@
+
+// Converted Variables
+
+$ButtonPaint-color: #fff !default;
+$ButtonPaint-bgColor: $g-mono-30 !default;
+$ButtonPaint-primary-color: #fff !default;
+$ButtonPaint-primary-bgColor: $g-primary !default;
+
+// Custom Media Query Variables
+
+
+/*　sircus-components-button-paint
+======================================== */
+
+.Button--paint {
+  background-color: $ButtonPaint-bgColor;
+  color: $ButtonPaint-color;
+}
+
+.Button--paint:hover,
+.Button--paint:focus,
+.Button--paint:active,
+.Button--paint.is-active{
+  background-color:transparent;
+  color: $ButtonPaint-bgColor;
+  text-decoration: none;
+}
+
+
+.Button--paint.Button--primary {
+  background-color:$ButtonPaint-primary-bgColor;
+  color:$ButtonPaint-primary-color;
+}
+.Button--paint.Button--primary:hover,
+.Button--paint.Button--primary:focus,
+.Button--paint.Button--primary:active,
+.Button--paint.Button--primary.is-active{
+  background-color:transparent;
+  color:$ButtonPaint-primary-bgColor;
+}
